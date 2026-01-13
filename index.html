@@ -1,28 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Rincón Digital</title>
-</head>
-<style>
-  body {
-    background-color: #f0f8ff; /* Un color azul clarito */
-    font-family: sans-serif;    /* Una letra más moderna */
-    color: #333;               /* Color de texto gris oscuro */
-    text-align: center;        /* Centra todo el contenido */
-  }
-</style>
-<body>
-    <header>
-        <h1>Bienvenido a mi primera página</h1>
-    </header>
     
-    <main>
-        <p>Este es un proyecto personal que estoy haciendo desde la compu del laburo, pero bien separado.</p>
-        <p>¿Qué sigue?</p>
-        <ul>
-            <li>Aprender a poner colores</li>
-            <li>Subirlo a GitHub</li>
-        </ul>
-    </main>
-</body>
-</html>
+    <style>
+        /* Aquí es donde sucede la magia del diseño */
+        body {
+            background-color: #e0f2f1; /* Un verde agua muy suave */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #2c3e50;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .tarjeta {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            text-align: center;
+            border-top: 5px solid #009688;
+        }
+
+        h1 {
+            color: #00796b;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .boton {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #009688;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .boton:hover {
+            background-color: #004d40;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="tarjeta">
+        <h1>¡Logré cambiar el estilo! 🚀</h1>
+        <p>Esta página ya no es solo texto aburrido.<br> 
+        Está corriendo desde mi cuenta personal de GitHub.</p>
+        
+        <a href="#" class="boton">¡Esto es un botón!</a>
