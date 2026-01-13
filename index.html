@@ -6,9 +6,8 @@
     <title>Mi Rincón Digital</title>
     
     <style>
-        /* Aquí es donde sucede la magia del diseño */
         body {
-            background-color: #e0f2f1; /* Un verde agua muy suave */
+            background-color: #e0f2f1;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: #2c3e50;
             display: flex;
@@ -26,6 +25,18 @@
             box-shadow: 0 10px 25px rgba(0,0,0,0.1);
             text-align: center;
             border-top: 5px solid #009688;
+            max-width: 400px; /* Añadido para que no sea muy ancha en PC */
+        }
+
+        /* ESTO ES LO QUE FALTABA */
+        .foto {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 20px 0;
+            border: 4px solid #009688;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
 
         h1 {
@@ -58,8 +69,13 @@
 
     <div class="tarjeta">
         <h1>Mi primera página web</h1>
+        
         <img src="https://i.pinimg.com/736x/16/ef/ab/16efab44fd2eb290f3d020b0c1efd3a9.jpg" alt="Ilustración" class="foto">
-        <p>Está corriendo desde mi cuenta personal de GitHub<br> 
-        </p>
+        
+        <p>Está corriendo desde mi cuenta personal de GitHub</p>
         
         <a href="#" class="boton">Ver más</a>
+    </div>
+
+</body>
+</html>
